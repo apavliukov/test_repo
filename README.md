@@ -1,2 +1,1 @@
-spicyblog
-=========
+This is Spicyblog repository!
