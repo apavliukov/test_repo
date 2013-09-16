@@ -1,3 +1,3 @@
 function test() {
-	alert('OK!');
+	$('body').append($('<h1 />').html('TEST OK!'));
 }
