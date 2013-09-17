@@ -1,5 +1,4 @@
 var RGBArray = [0, 0, 0];
-var currentColor = $('body').css('background-color');
 
 function changeColor() {
 	for (var index in RGBArray) {
@@ -11,7 +10,7 @@ function changeColor() {
 }
 
 function main() {
-	$('#color').html(currentColor);
+	changeColor();
 	$('input').click(function() {
 		changeColor();
 	});
