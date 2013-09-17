@@ -4,5 +4,8 @@ function changeColor() {
 	for (var index in RGBArray) {
 		RGBArray[index] = Math.floor(Math.random()*255);
 	}
-	console.log(RGBArray);
+	var newColor = 'rgb(' + RGBArray[0] + ', ' + RGBArray[1] + ', ' + RGBArray[2] + ')';
+	$('body').css('background-color', newColor);
+	$('#color').html(newColor);
+	console.log(newColor);
 }
