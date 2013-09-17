@@ -4,20 +4,14 @@
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script type="text/javascript" src="test.js"></script>
 		<script type="text/javascript">
-			$(document).ready(function() {
-				var currentColor = $('body').css('background-color');
-				$('#color').html(currentColor);
-				$('input').click(function() {
-					changeColor();
-				});
-			});
+			$(document).ready(main());
 		</script>
 	</head>
 	<body>
 		<div id="mainblock">
 			<h1>Random background color!</h1>
 			<input id="button" type="button" value="Generate" />
-			<p>Current color is <span id="color">&nbsp;</span></p>
+			<p>Current color : <span id="color">&nbsp;</span></p>
 		</div>
 	</body>
 </html>
