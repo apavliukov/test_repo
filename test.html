@@ -6,10 +6,10 @@
 		<script type="text/javascript">
 			$(document).ready(function() {
 				//test();
+				var currentColor = $('body').css('background-color');
+				$('#color').html('#'+currentColor);
 				$('input').click(function() {
-					//alert('button click');
-					var currentColor = $('body').css('background-color');
-					$('#color').html('someColor');
+					alert('button click');
 				});
 			});
 		</script>
