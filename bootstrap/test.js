@@ -11,7 +11,7 @@ function changeColor() {
 
 function main() {
 	changeColor();
-	$('input').click(function() {
+	$('button').click(function() {
 		changeColor();
 	});
 }
