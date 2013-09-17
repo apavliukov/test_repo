@@ -8,6 +8,9 @@
 				//test();
 				$('input').click(function() {
 					alert('button click');
+					var currentColor = $('body').css('background-color');
+					console.log(currentColor);
+					$('#color').html(currentColor);
 				});
 			});
 		</script>
