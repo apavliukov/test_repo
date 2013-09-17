@@ -1,9 +1,8 @@
-function test() {
-	alert('script is ok!');
-	/*$('input').click(function() {
-		var currentColor = $('body').css('background-color');
-		console.log(currentColor);
-		$('#color').html(currentColor);
-		alert('button click');
-	});*/
+var rbgArray = [0, 0, 0];
+
+function changeColor() {
+	for (var index in rbgArray) {
+		rgbArray[index] = Math.floor(Math.random()*255);
+	}
+	console.log(rgbArray);
 }

@@ -7,10 +7,11 @@
 			$(document).ready(function() {
 				//test();
 				var currentColor = $('body').css('background-color');
-				$('#color').html('#'+currentColor);
+				$('#color').html(currentColor);
 				$('input').click(function() {
 					alert('button click');
 				});
+				changeColor();
 			});
 		</script>
 	</head>
