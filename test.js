@@ -1,4 +1,5 @@
 function test() {
-	var $h1 = $('<h1 />').html('Random background color!');
-	$('body').append($h1);
+	alert('script is ok!');
+	var currentColor = $('body').css('background-color');
+	$('#button p span').html(currentColor);
 }
