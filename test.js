@@ -1,8 +1,8 @@
-var rbgArray = [0, 0, 0];
+var RGBArray = [0, 0, 0];
 
 function changeColor() {
-	for (var index in rbgArray) {
-		rgbArray[index] = Math.floor(Math.random()*255);
+	for (var index in RGBArray) {
+		RGBArray[index] = Math.floor(Math.random()*255);
 	}
-	console.log(rgbArray);
+	console.log(RGBArray);
 }
