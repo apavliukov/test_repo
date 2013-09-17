@@ -1,0 +1,27 @@
+body {
+	position: relative;
+}
+
+#mainblock {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 500px;
+	height: 150px;
+	text-align: center;
+	margin: -75px 0 0 -250px;
+}
+
+#button {
+	width: 100px;
+	height: 30px;
+}
+
+#color {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+p {
+	font-size: 16px;
+}
