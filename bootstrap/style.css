@@ -12,10 +12,13 @@ body {
 	margin: -75px 0 0 -250px;
 }
 
-/*button {
-	width: 100px;
-	height: 30px;
-}*/
+h1, p {
+	margin: 0;
+}
+
+button {
+	margin : 15px;
+}
 
 #color {
 	font-size: 18px;
