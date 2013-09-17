@@ -1,13 +1,14 @@
 body {
 	background-color: #457832;
-	display: table;
+	position: relative;
 }
 
 #button {
 	margin: 0 auto;
-	display: table-cell;
-	vertical-align: middle;
+	position: absolute;
 	width: 100px;
 	height: 50px;
-	line-height: 50px;
+	top: 50%;
+	left: 50%;
+	margin: -15% 0 0 -25%;
 }
