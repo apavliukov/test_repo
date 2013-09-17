@@ -1,5 +1,5 @@
 function test() {
-	alert('OK');
-	$h1 = $('<h1 />').html('TEST H1');
-	$('body').append($h1);
+	//alert('OK');
+	var $h2 = $('<h2 />').html('TEST H2');
+	$('body').append($h2);
 }
