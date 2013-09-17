@@ -1,6 +1,11 @@
+body {
+	background-color: #457832;
+}
+
 #button {
 	margin: 0 auto;
-	top : 50%;
+	display: table-cell;
+	vertical-align: middle;
 	width: 100px;
 	height: 50px;
 }
