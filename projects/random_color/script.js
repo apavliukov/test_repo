@@ -16,10 +16,9 @@ function isInteger(num) {
 function convertNumber(number, systemTo) {
 	var mods = [];
 	var result = 0;
-	while (isInteger(number) && number > 0) {
-		var mod = number % systemTo;
-		mods.push(mod);
-		number = number / 16;
+	while (number > 0) {
+		mods.push(number % systemTo);
+		number = Math.floor(number / 16);
 	}
 	console.log(mods);
 }
