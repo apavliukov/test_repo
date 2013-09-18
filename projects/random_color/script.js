@@ -10,10 +10,6 @@ function changeColor() {
 	$('#color').html(newColor);
 }
 
-function hexNumber(number) {
-	return HEXArray[number+1];
-}
-
 function convertDecToHex(number) {
 	var mods = [];
 	var result = 0;
