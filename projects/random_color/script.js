@@ -24,5 +24,4 @@ function main() {
 	$('button').click(function() {
 		changeColor();
 	});
-	convertNumber(102, 16);
 }
