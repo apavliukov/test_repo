@@ -9,7 +9,7 @@ function changeColor() {
 	$('#color').html(newColor);
 }
 
-function convertNumber(number, systemTo) {
+/*function convertNumber(number, systemTo) {
 	var mods = [];
 	var result = 0;
 	while (number > 0) {
@@ -17,7 +17,7 @@ function convertNumber(number, systemTo) {
 		number /= 16;
 	}
 	console.log(mods);
-}
+}*/
 
 function main() {
 	changeColor();
