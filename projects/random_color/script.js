@@ -12,7 +12,7 @@ function changeColor() {
 function convertNumber(number, systemTo) {
 	var mods = [];
 	var result = 0;
-	while (number >= 0) {
+	while (number > 0) {
 		mods.push(number % systemTo);
 		number /= 16;
 	}
