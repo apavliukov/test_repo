@@ -14,7 +14,6 @@ body {
 }
 
 button {
-	border: 1px solid green;
     display: block;
 }
 
@@ -26,5 +25,5 @@ button {
 p {
 	font-size: 16px;
     border: 1px solid yellow;
-    margin-top: 20px;
+    margin-top: 15px;
 }
