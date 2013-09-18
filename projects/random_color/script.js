@@ -13,8 +13,9 @@ function convertNumber(number, systemTo) {
 	var mods = [];
 	var result = 0;
 	while (number > 0) {
-		mods.push(number % systemTo);
-		number /= 16;
+		var mod = number % systemTo;
+		mods.push(mod);
+		number = number / 16;
 	}
 	console.log(mods);
 }
@@ -24,5 +25,5 @@ function main() {
 	$('button').click(function() {
 		changeColor();
 	});
-	convertNumber(102, 16);
+	convertNumber(255, 16);
 }
