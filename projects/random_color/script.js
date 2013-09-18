@@ -10,6 +10,10 @@ function changeColor() {
 	$('#color').html(newColor);
 }
 
+function hexNumber(number) {
+	return HEXArray[number+1];
+}
+
 function convertDecToHex(number) {
 	var mods = [];
 	var result = 0;
@@ -19,8 +23,8 @@ function convertDecToHex(number) {
 	}
 	var len = mods.length;
 	for (var i in mods) {
-		var temp = mods[i];
-		mods[i] = mods[len-i-1];
+		var temp = hexNumber(mods[i]);
+		mods[i] = hexNumber(mods[len-i-1]);
 		mods[len-i-1] = temp;
 	}
 	console.log(mods);
@@ -31,5 +35,5 @@ function main() {
 	$('button').click(function() {
 		changeColor();
 	});
-	convertDecToHex(56, 16);
+	convertDecToHex(255, 16);
 }
