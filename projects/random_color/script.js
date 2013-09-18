@@ -31,5 +31,5 @@ function main() {
 	$('button').click(function() {
 		changeColor();
 	});
-	convertDecToHex(255, 16);
+	convertDecToHex(56, 16);
 }
