@@ -1,1 +1,1 @@
-This is Spicyblog repository!
+Тестовый репозиторий для тренировки.
