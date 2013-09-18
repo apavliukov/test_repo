@@ -10,10 +10,11 @@ body {
 	height: 200px;
 	text-align: center;
 	margin: -100px 0 0 -250px;
+    border: 1px solid red;
 }
 
 button {
-	margin : 30px;
+	border: 1px solid green;
 }
 
 #color {
@@ -23,4 +24,5 @@ button {
 
 p {
 	font-size: 16px;
+    border: 1px solid blue;
 }
