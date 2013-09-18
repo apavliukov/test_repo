@@ -23,8 +23,8 @@ function convertDecToHex(number) {
 	}
 	var len = mods.length;
 	for (var i in mods) {
-		var temp = hexNumber(mods[i]);
-		mods[i] = hexNumber(mods[len-i-1]);
+		var temp = mods[i];
+		mods[i] = mods[len-i-1];
 		mods[len-i-1] = temp;
 	}
 	console.log(mods);
@@ -35,5 +35,5 @@ function main() {
 	$('button').click(function() {
 		changeColor();
 	});
-	convertDecToHex(255, 16);
+	convertDecToHex(56, 16);
 }
