@@ -12,6 +12,10 @@ body {
 	margin: -75px 0 0 -300px;
 }
 
+button {
+	display: block;
+}
+
 #color {
 	font-size: 20px;
 	font-weight: bold;
