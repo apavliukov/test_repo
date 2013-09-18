@@ -9,6 +9,10 @@ function changeColor() {
 	$('#color').html(newColor);
 }
 
+function isInteger(num) {
+  return (num ^ 0) === num;
+}
+
 function convertNumber(number, systemTo) {
 	var mods = [];
 	var result = 0;
