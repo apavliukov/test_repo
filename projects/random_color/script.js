@@ -52,13 +52,14 @@ function convertDecToHex(number) {
 
 function convertHexToDec(string) {
 	var result = 0;
+	var len = string.length;
 	var i = 0;
-	var elem;
-	while (string.length > 0) {
-		elem = string.pop();
-		result += Math.pow(16, i)*HEXNumbers(elem);
+	var chr;
+	while (i < len) {
+		chr = string.charAt(i);
+		result += Math.pow(16, len-i-1)*HEXNumbers(chr);
 		i++;
-		console.log('elem = ' + elem + ', result = ' + result + ', HEXNumbers(elem) = ' + HEXNumbers(elem));
+		console.log('elem = ' + chr + ', result = ' + result + ', HEXNumbers(elem) = ' + HEXNumbers(chr));
 	}
 	console.log(result);
 	return result;
