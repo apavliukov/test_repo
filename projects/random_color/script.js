@@ -13,16 +13,16 @@ function changeColor() {
 function convertDecToHex(number) {
 	var mods = [];
 	var result = 0;
+	var len = mos.length;
 	while (number > 0) {
-		mods.push(number % 16);
+		mods.unshift(number % 16);
 		number = Math.floor(number / 16);
 	}
-	var len = mods.length;
-	for (var i in mods) {
+	/*for (var i in mods) {
 		var temp = mods[i];
 		mods[i] = mods[len-i-1];
 		mods[len-i-1] = temp;
-	}
+	}*/
 	console.log(mods);
 }
 
