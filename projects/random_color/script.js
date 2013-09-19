@@ -1,5 +1,5 @@
 var RGBArray = [0, 0, 0];
-var HEXArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'A', 'B', 'C', 'D', 'E', 'F'];
+var HEXArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'A', 'B', 'C', 'D', 'E', 'F'];
 
 function changeColor() {
 	for (var i in RGBArray) {
@@ -12,15 +12,17 @@ function changeColor() {
 
 function convertDecToHex(number) {
 	var mods = [];
-	var result = 0;
-	//var len = mods.length;
+	var result = "";
 	mods.push(number % 16);
 	number = Math.floor(number / 16);
 	while (number > 0) {
 		mods.unshift(number % 16);
 		number = Math.floor(number / 16);
 	}
-	
+	for (var i in mods) {
+		result += HEXArray[mods[i]];
+	}
+	return result;
 }
 
 function main() {
@@ -28,5 +30,5 @@ function main() {
 	$('button').click(function() {
 		changeColor();
 	});
-	convertDecToHex(56, 16);
+	convertDecToHex(255, 16);
 }
