@@ -20,8 +20,10 @@ function convertDecToHex(number) {
 		number = Math.floor(number / 16);
 	}
 	for (var i in mods) {
-		result += HEXArray[mods[i]];
+		var pos = mods[i];
+		result += HEXArray[pos];
 	}
+	console.log(result);
 	return result;
 }
 
@@ -30,5 +32,5 @@ function main() {
 	$('button').click(function() {
 		changeColor();
 	});
-	console.log(convertDecToHex(255, 16));
+	convertDecToHex(255, 16);
 }
