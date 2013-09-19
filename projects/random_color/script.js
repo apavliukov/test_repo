@@ -20,12 +20,7 @@ function convertDecToHex(number) {
 		mods.unshift(number % 16);
 		number = Math.floor(number / 16);
 	}
-	/*for (var i in mods) {
-		var temp = mods[i];
-		mods[i] = mods[len-i-1];
-		mods[len-i-1] = temp;
-	}*/
-	console.log(mods);
+	
 }
 
 function main() {
