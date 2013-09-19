@@ -10,6 +10,30 @@ function changeColor() {
 	$('#color span').html(newColor);
 }
 
+function isNumber(n) {
+  return !isNaN(parseFloat(n)) && isFinite(n);
+}
+
+function HEXNumbers(string) {
+	if (isNumber(string)) return string;
+	else {
+		switch(string) {
+			case 'A' : 
+				return 10;
+			case 'B' : 
+				return 11;
+			case 'C' : 
+				return 12;
+			case 'D' :
+				return 13;
+			case 'E' : 
+				return 14;
+			case 'F' : 
+				return 15;	
+		}
+	}
+}
+
 function convertDecToHex(number) {
 	var mods = [];
 	var result = "";
@@ -23,6 +47,19 @@ function convertDecToHex(number) {
 		var pos = mods[i];
 		result += HEXArray[pos];
 	}
+	return result;
+}
+
+function convertHexToDec(string) {
+	var result = 0;
+	var i = 0;
+	var elem;
+	while (string.length > 0) {
+		elem = string.pop();
+		result += Math.pow(16, i)*HEXNumbers(elem);
+		i++;
+		console.log('elem = ' + elem + ', result = ' + result + ', HEXNumbers(elem) = ' + HEXNumbers(elem));
+	}
 	console.log(result);
 	return result;
 }
@@ -32,5 +69,5 @@ function main() {
 	$('button').click(function() {
 		changeColor();
 	});
-	convertDecToHex(255);
+	convertHexToDec('6A');
 }
