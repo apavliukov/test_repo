@@ -59,7 +59,7 @@ function convertHexToDec(string) {
 		chr = string.charAt(i);
 		result += Math.pow(16, len-i-1)*HEXNumbers(chr);
 		i++;
-		console.log('elem = ' + chr + ', HEXNumbers(elem) = ' + HEXNumbers(chr) + ', result = ' + result);
+		console.log('chr = ' + chr + ', HEXNumbers(chr) = ' + HEXNumbers(chr) + ', result = ' + result);
 	}
 	console.log(result);
 	return result;
