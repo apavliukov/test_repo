@@ -13,7 +13,7 @@ function changeColor() {
 function convertDecToHex(number) {
 	var mods = [];
 	var result = 0;
-	var len = mos.length;
+	var len = mods.length;
 	while (number > 0) {
 		mods.unshift(number % 16);
 		number = Math.floor(number / 16);
