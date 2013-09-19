@@ -59,7 +59,7 @@ function convertHexToDec(string) {
 		chr = string.charAt(i);
 		result += Math.pow(16, len-i-1)*HEXNumbers(chr);
 		i++;
-		console.log('elem = ' + chr + ', result = ' + result + ', HEXNumbers(elem) = ' + HEXNumbers(chr));
+		console.log('elem = ' + chr + ', HEXNumbers(elem) = ' + HEXNumbers(chr) + ', result = ' + result);
 	}
 	console.log(result);
 	return result;
@@ -70,5 +70,5 @@ function main() {
 	$('button').click(function() {
 		changeColor();
 	});
-	convertHexToDec('6A');
+	convertHexToDec('66F');
 }
