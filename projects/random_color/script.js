@@ -1,5 +1,5 @@
 var RGBArray = [0, 0, 0];
-var HEXArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'A', 'B', 'C', 'D', 'E', 'F'];
+var HEXArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F'];
 
 function changeColor() {
 	for (var i in RGBArray) {
@@ -21,12 +21,7 @@ function convertDecToHex(number) {
 	}
 	for (var i in mods) {
 		var pos = mods[i];
-		if (pos == 0) {
-			result += "0";
-		}
-		else {
-			result += HEXArray[pos];
-		}
+		result += HEXArray[pos];
 	}
 	console.log(result);
 	return result;
