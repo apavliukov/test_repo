@@ -54,7 +54,7 @@ function convertHexToDec(string) {
 	var result = 0;
 	var len = string.length;
 	var chr;
-	while (var i = 0; i < len; i++) {
+	for (var i = 0; i < len; i++) {
 		chr = string.charAt(i);
 		result += Math.pow(16, len-i-1) * HEXNumbers(chr);
 	}
