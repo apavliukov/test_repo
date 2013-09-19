@@ -16,7 +16,7 @@ body {
 	margin: -100px 0 0 -300px;
 }
 
-span {
+#color span {
 	font-size: 20px;
 	font-weight: bold;
 }
@@ -28,8 +28,7 @@ span {
 
 label {
 	display: inline !important;
-	font-weight: bold;
-	font-size: 18px;
+	font-size: 18px !important;
 }
 
 .radio {
@@ -37,4 +36,9 @@ label {
     padding: 0 !important;
     clear: both;
     line-height: 20px;
+}
+
+input {
+	margin-top: 0px !important;
+	margin-right: 3px;
 }
