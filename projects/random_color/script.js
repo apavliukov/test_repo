@@ -47,6 +47,7 @@ function convertDecToHex(number) {
 		var pos = mods[i];
 		result += HEXArray[pos];
 	}
+	console.log(result);
 	return result;
 }
 
@@ -58,6 +59,7 @@ function convertHexToDec(string) {
 		chr = string.charAt(i);
 		result += Math.pow(16, len-i-1) * HEXNumbers(chr);
 	}
+	console.log(result);
 	return result;
 }
 
