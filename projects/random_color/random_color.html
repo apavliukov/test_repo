@@ -14,8 +14,12 @@
 		<div id="mainblock">
 			<h1>Произвольный цвет фона</h1>
 			<button class="btn btn-danger btn-large">Генерировать</button>
-			<label for="rgd" class="radio inline"><input type="radio" id="rgb" name="colorType" value="rgb" checked="checked" />RGB</label>
-			<label for="hex" class="radio inline"><input type="radio" id="hex" name="colorType" value="hex" />HEX</label>
+			<div id="controls">
+				<input type="radio" id="rgb" name="colorType" value="rgb" checked="checked" />
+					<label for="rgb">RGB</label>
+				<input type="radio" id="hex" name="colorType" value="hex" />
+					<label for="hex">HEX</label>
+			</div>
 			<p id="color">Текущий цвет : <span></span></p>
 		</div>
 	</body>

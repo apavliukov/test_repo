@@ -1,13 +1,28 @@
-var RGBArray = [0, 0, 0];
-var HEXArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F'];
+var ColorArray = [0, 0, 0];
+var HEXNumbersArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F'];
 
-function changeColor() {
-	for (var i in RGBArray) {
-		RGBArray[i] = Math.floor(Math.random()*255);
+function changeColor(colorType) {
+	var newColor = "";
+	for (var i in ColorArray) {
+		ColorArray[i] = Math.floor(Math.random()*255);
 	}
-	var newColor = 'RGB(' + RGBArray[0] + ', ' + RGBArray[1] + ', ' + RGBArray[2] + ')';
+	if (colorType == 'rgb') {
+		newColor = 'RGB(' + ColorArray[0] + ', ' + ColorArray[1] + ', ' + ColorArray[2] + ')';
+	} else if (colorType == 'hex') {
+		newColor = '#' + convertDecToHex(ColorArray[0]) + convertDecToHex(ColorArray[1]) + convertDecToHex(ColorArray[2]);
+	}
 	$('body').css('background-color', newColor);
 	$('#color span').html(newColor);
+}
+
+/*function convertRGBColor(string) {
+	var subString = string.split();
+	console.log(subString);
+}*/
+
+function refreshSpan(colorType) {
+	var currentColor = $('body').css('background-color');
+	console.log(currentColor);
 }
 
 function isNumber(n) {
@@ -39,13 +54,14 @@ function convertDecToHex(number) {
 	var result = "";
 	mods.push(number % 16);
 	number = Math.floor(number / 16);
+	if (number == 0) mods.unshift(0);
 	while (number > 0) {
 		mods.unshift(number % 16);
 		number = Math.floor(number / 16);
 	}
 	for (var i in mods) {
 		var pos = mods[i];
-		result += HEXArray[pos];
+		result += HEXNumbersArray[pos];
 	}
 	return result;
 }
@@ -61,9 +77,19 @@ function convertHexToDec(string) {
 	return result;
 }
 
+function activeRadio() {
+	return $('input:checked').val();
+}
+
 function main() {
-	changeColor();
+	var colorChoice = activeRadio();
+	changeColor(colorChoice);
 	$('button').click(function() {
-		changeColor();
+		changeColor(colorChoice);
 	});
+/*	$('input').click(function() {
+		colorChoice = activeRadio();
+	});*/
+	//refreshSpan('hex');
+	//convertRGBColor('rgb(62, 148, 39)');
 }
