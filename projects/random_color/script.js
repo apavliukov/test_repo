@@ -53,15 +53,11 @@ function convertDecToHex(number) {
 function convertHexToDec(string) {
 	var result = 0;
 	var len = string.length;
-	var i = 0;
 	var chr;
-	while (i < len) {
+	while (var i = 0; i < len; i++) {
 		chr = string.charAt(i);
-		result += Math.pow(16, len-i-1)*HEXNumbers(chr);
-		i++;
-		console.log('chr = ' + chr + ', HEXNumbers(chr) = ' + HEXNumbers(chr) + ', result = ' + result);
+		result += Math.pow(16, len-i-1) * HEXNumbers(chr);
 	}
-	console.log(result);
 	return result;
 }
 
@@ -70,5 +66,6 @@ function main() {
 	$('button').click(function() {
 		changeColor();
 	});
-	convertHexToDec('66F');
+	console.log(convertHexToDec('66F'));
+	console.log(convertDecToHex(1647));
 }
