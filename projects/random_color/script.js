@@ -7,7 +7,7 @@ function changeColor() {
 	}
 	var newColor = 'rgb(' + RGBArray[0] + ', ' + RGBArray[1] + ', ' + RGBArray[2] + ')';
 	$('body').css('background-color', newColor);
-	$('#color').append($('<span />').html(newColor));
+	$('span').html(newColor);
 }
 
 function convertDecToHex(number) {
@@ -30,5 +30,5 @@ function main() {
 	$('button').click(function() {
 		changeColor();
 	});
-	convertDecToHex(255, 16);
+	console.log(convertDecToHex(255, 16);
 }
