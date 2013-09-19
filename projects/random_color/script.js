@@ -5,7 +5,7 @@ function changeColor() {
 	for (var i in RGBArray) {
 		RGBArray[i] = Math.floor(Math.random()*255);
 	}
-	var newColor = 'rgb(' + RGBArray[0] + ', ' + RGBArray[1] + ', ' + RGBArray[2] + ')';
+	var newColor = 'RGB(' + RGBArray[0] + ', ' + RGBArray[1] + ', ' + RGBArray[2] + ')';
 	$('body').css('background-color', newColor);
 	$('#color span').html(newColor);
 }
